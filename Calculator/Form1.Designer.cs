@@ -34,6 +34,7 @@
             this.txtSoB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtKQ = new System.Windows.Forms.TextBox();
+            this.btCong = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -44,7 +45,6 @@
             this.label1.Size = new System.Drawing.Size(81, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "So a:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtSoA
             // 
@@ -52,7 +52,6 @@
             this.txtSoA.Name = "txtSoA";
             this.txtSoA.Size = new System.Drawing.Size(236, 38);
             this.txtSoA.TabIndex = 1;
-            this.txtSoA.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -62,7 +61,6 @@
             this.label2.Size = new System.Drawing.Size(81, 32);
             this.label2.TabIndex = 0;
             this.label2.Text = "So b:";
-            this.label2.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtSoB
             // 
@@ -70,7 +68,6 @@
             this.txtSoB.Name = "txtSoB";
             this.txtSoB.Size = new System.Drawing.Size(236, 38);
             this.txtSoB.TabIndex = 1;
-            this.txtSoB.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -80,7 +77,6 @@
             this.label3.Size = new System.Drawing.Size(121, 32);
             this.label3.TabIndex = 0;
             this.label3.Text = "Ket qua:";
-            this.label3.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtKQ
             // 
@@ -88,13 +84,23 @@
             this.txtKQ.Name = "txtKQ";
             this.txtKQ.Size = new System.Drawing.Size(236, 38);
             this.txtKQ.TabIndex = 1;
-            this.txtKQ.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // btCong
+            // 
+            this.btCong.Location = new System.Drawing.Point(291, 211);
+            this.btCong.Name = "btCong";
+            this.btCong.Size = new System.Drawing.Size(114, 41);
+            this.btCong.TabIndex = 2;
+            this.btCong.Text = "Cong";
+            this.btCong.UseVisualStyleBackColor = true;
+            this.btCong.Click += new System.EventHandler(this.btCong_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(564, 494);
+            this.Controls.Add(this.btCong);
             this.Controls.Add(this.txtKQ);
             this.Controls.Add(this.txtSoB);
             this.Controls.Add(this.txtSoA);
@@ -102,7 +108,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Tinh toan";
             this.ResumeLayout(false);
@@ -118,6 +124,7 @@
         private System.Windows.Forms.TextBox txtSoB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtKQ;
+        private System.Windows.Forms.Button btCong;
     }
 }
 
